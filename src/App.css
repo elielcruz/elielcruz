@@ -1,0 +1,144 @@
+.App {
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 14px;
+  color: #555;
+  line-height: 150%;
+}
+
+.App-header {
+  background-color: #dadada;
+}
+
+.App-header-container {
+  margin: 0 auto;
+  padding: 20px 10%;
+  max-width: 800px;
+  min-height: 35px;
+}
+
+.header-left {
+  float: left;
+  display: block;
+}
+
+.header-right {
+  float:right;
+  display: block;
+  text-align: right;
+}
+
+.page-title {
+  font-size: 28px;
+}
+
+.App-body {
+  margin: 0 auto;
+  padding: 0 10%;
+  max-width: 800px;
+}
+
+.left {
+  display: block;
+  float: left;
+}
+
+.right {
+  display: block;
+  float: right;
+}
+
+h1 {
+  font-size: 32px;
+  color: #555;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 20px;
+  color: #60ABEF;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+  font-weight: lighter;
+}
+
+.about-me {
+  margin-top: 50px;
+}
+
+.description {
+  color: #999;
+  line-height: 130%;
+}
+
+.description-below {
+  margin: 0 0 10px;
+}
+
+.description-above {
+  margin: 10px 0 0;
+}
+
+.main-skills, .certifications {
+  width: 45%;
+  float: left;
+  padding-right: 10px;
+  display: block;
+}
+
+.soft-skills, .languages {
+  width: 45%;
+  float: right;
+  padding-left: 10px;
+  display: block;
+}
+
+.certifications, 
+.languages, 
+.main-skills, 
+.soft-skills {
+  margin-top: 20px;
+}
+
+.certifications, .languages {
+  margin-bottom: 80px;
+}
+
+.year {
+  color: #60ABEF;
+}
+
+.working-experience {
+  margin-bottom: 80px;
+}
+
+.working-experience-item,
+.education-item {
+  margin-top: 30px;
+}
+
+.working-period,
+.studying-period {
+  color: #999;
+}
+
+.company-name,
+.institution-name {
+  font-size: 16px;
+}
+
+.working-experience-description,
+.education-description {
+  display: block;
+  clear: both;
+}
+
+.responsibilities {
+  margin: 20px 0 10px 0;
+}
