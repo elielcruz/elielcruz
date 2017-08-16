@@ -7,11 +7,11 @@
 }
 
 .App-header {
-  background-color: #dadada;
+  
 }
 
 .App-header-container {
-  margin: 0 auto;
+  margin: 20px auto 80px auto;
   padding: 20px 10%;
   max-width: 800px;
   min-height: 35px;
@@ -29,7 +29,23 @@
 }
 
 .page-title {
+
+}
+
+.first-name {
+  font-size: 52px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.phoneme {
+  font-size: 24px;
+  color: #999;
+}
+
+.last-name {
   font-size: 28px;
+  color: #60ABEF;
 }
 
 .App-body {
@@ -52,6 +68,8 @@ h1 {
   font-size: 32px;
   color: #555;
   font-weight: lighter;
+  clear: both;
+  line-height: 150%;
 }
 
 h2 {
@@ -85,37 +103,14 @@ h3 {
   margin: 10px 0 0;
 }
 
-.main-skills, .certifications {
-  width: 45%;
-  float: left;
-  padding-right: 10px;
-  display: block;
-}
-
-.soft-skills, .languages {
-  width: 45%;
-  float: right;
-  padding-left: 10px;
-  display: block;
-}
-
-.certifications, 
-.languages, 
-.main-skills, 
-.soft-skills {
+.skills {
+  width: 48%;
   margin-top: 20px;
-}
-
-.certifications, .languages {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .year {
   color: #60ABEF;
-}
-
-.working-experience {
-  margin-bottom: 80px;
 }
 
 .working-experience-item,

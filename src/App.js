@@ -18,8 +18,9 @@ stakeholders feedback to create better and more usable products.</p>
 class Skills extends React.Component {
 	render () {
 	return	(
-		<section className="skills">
-			<div className="main-skills">
+		<div>
+		<section className="main-skills">
+			<div className="skills left">
 				<h2>Main Skills</h2>
 				<h3>Business Analysis</h3>
 				<p className="description description-below">Worked in agile projects for the public sector, eliciting requirements, 
@@ -31,7 +32,9 @@ class Skills extends React.Component {
 				<p className="description description-below">Worked as a Software Engineer in web-based Java projects as well as a Freelance 
 				Web and Mobile developer.</p>
 			</div>
-			<div className="soft-skills">
+		</section>
+		<section className="soft-skills">
+			<div className="skills right">
 				<h2>Soft Skills</h2>
 				<h3>People Management</h3>
 				<p className="description description-below">As a Team Lead I am required to lead, inspire, motivate as well as hiring, 
@@ -45,6 +48,7 @@ class Skills extends React.Component {
 				at the same time I have to identify the best available solution.</p>
 			</div>
 		</section>
+		</div>
 	);
 	}
 }
@@ -52,8 +56,9 @@ class Skills extends React.Component {
 class Certifications extends React.Component {
 	render () {
 	return	(
-		<section className="skills">
-			<div className="certifications">
+		<div>
+		<section className="certifications">
+			<div className="skills left">
 				<h2>Most Recent Certifications</h2>
 				<p className="description description-above"><span className="year">2017</span> University of Alberta</p>
 				<h3>Agile Planning for Sofware Products</h3>
@@ -63,15 +68,8 @@ class Certifications extends React.Component {
 				<h3>IELTS English Certification</h3>
 			</div>
 		</section>
-	);
-	}
-}
-
-class Languages extends React.Component {
-	render () {
-	return	(
-		<section className="skills">
-			<div className="languages">
+		<section className="languages">
+			<div className="skills right">
 				<h2>Languages</h2>
 				<h3>English</h3>
 				<p className="description description-below">Business Fluent</p>
@@ -81,6 +79,7 @@ class Languages extends React.Component {
 				<p className="description description-below">Basic</p>
 			</div>
 		</section>
+		</div>
 	);
 	}
 }
@@ -282,7 +281,10 @@ class App extends Component {
 	    <div className="App-header">
 	    <div className="App-header-container">
 	      <div className="header-left">
-	      	<div className="page-title">Eliel Cruz Lopez</div>
+	      	<div className="page-title">
+	      		<div className="first-name">Eliel <span className="phoneme">/ɛli'ɛl/</span></div>
+	      		<div className="last-name">Cruz Lopez</div>
+	      	</div>
 	      </div>
 	      <div className="header-right">
 	      	<div className="phone">+353 (0) 83 158 2291</div>
@@ -294,7 +296,6 @@ class App extends Component {
 	    	<AboutMe lang={this.state.lang}/>
 	    	<Skills lang={this.state.lang}/>
 	    	<Certifications lang={this.state.lang}/>
-	    	<Languages lang={this.state.lang}/>
 	    	<WorkingExperience lang={this.state.lang}/>
 	    	<Education lang={this.state.lang}/>
 	    </div>
