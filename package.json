@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10"
@@ -11,7 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  	"deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "jsx-loader": "^0.13.2",
@@ -21,5 +24,5 @@
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
   },
-  "homepage": "https://github.com/elielcruz/personal-website"
+  "homepage": "https://elielcruz.github.io/personal-website"
 }
