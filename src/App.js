@@ -274,7 +274,7 @@ class Menu extends React.Component {
 				<a className="top-menu-item" target="_blank" href="https://github.com/elielcruz">GitHub</a>
 			</li>
 			<li>
-				<a className="button-cv" target="_blank" href="/public/docs/ElielCruzLopez-CV.pdf">Download CV</a>
+				<a className="button-cv" href="https://github.com/elielcruz/personal/tree/master/public/docs">Download CV</a>
 			</li>
 		</ul>
 		</div>
