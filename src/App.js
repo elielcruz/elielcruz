@@ -262,6 +262,26 @@ class Education extends React.Component {
 	}
 }
 
+class Menu extends React.Component {
+	render () {
+	return	(
+		<div className="top-menu-container">
+		<ul className="top-menu">
+			<li>
+				<a className="top-menu-item" target="_blank" href="https://www.linkedin.com/in/elielcruzlopez/">LinkedIn</a>
+			</li>
+			<li>
+				<a className="top-menu-item" target="_blank" href="https://github.com/elielcruz">GitHub</a>
+			</li>
+			<li>
+				<a className="button-cv" target="_blank" href="/public/docs/ElielCruzLopez-CV.pdf">Download CV</a>
+			</li>
+		</ul>
+		</div>
+	);
+	}
+}
+
 class App extends Component {
 	constructor () {
     	super();
@@ -278,6 +298,7 @@ class App extends Component {
 	render() {
 	return (
 	  <div className="App">
+	  	<Menu lang={this.state.lang}/>
 	    <div className="App-header">
 	    <div className="App-header-container">
 	      <div className="header-left">
