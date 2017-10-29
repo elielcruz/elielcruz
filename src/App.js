@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+import es from './lang/es.json';
+import en from './lang/en.json';
 import './App.css';
 
 class AboutMe extends React.Component {
 	render () {
+	const aboutMeHeader = (this.props.lang === "ES") ? es.aboutme.header : en.aboutme.header;
+	const aboutMeDescription = (this.props.lang === "ES") ? es.aboutme.description : en.aboutme.description;
 	return	(
 		<section className="about-me">
-			<h2>About Me</h2>
-			<p>Passionate about Software Development and Product Management, striving to develop usable
-and reliable solutions. My next career goal is to become part of a team in which I can express my
-ideas in an open environment, at the same time I hear and take into account my team and
-stakeholders feedback to create better and more usable products.</p>
+			<h2>{aboutMeHeader}</h2>
+			<p>{aboutMeDescription}</p>
 		</section>
 	);
 	}
@@ -18,9 +19,9 @@ stakeholders feedback to create better and more usable products.</p>
 class Skills extends React.Component {
 	render () {
 	return	(
-		<div>
+		<div className="highlights">
 		<section className="main-skills">
-			<div className="skills left">
+			<div className="skills">
 				<h2>Main Skills</h2>
 				<h3>Business Analysis</h3>
 				<p className="description description-below">Worked in agile projects for the public sector, eliciting requirements, 
@@ -34,7 +35,7 @@ class Skills extends React.Component {
 			</div>
 		</section>
 		<section className="soft-skills">
-			<div className="skills right">
+			<div className="skills">
 				<h2>Soft Skills</h2>
 				<h3>People Management</h3>
 				<p className="description description-below">As a Team Lead I am required to lead, inspire, motivate as well as hiring, 
@@ -56,9 +57,9 @@ class Skills extends React.Component {
 class Certifications extends React.Component {
 	render () {
 	return	(
-		<div>
+		<div className="highlights">
 		<section className="certifications">
-			<div className="skills left">
+			<div className="skills">
 				<h2>Most Recent Certifications</h2>
 				<p className="description description-above"><span className="year">2017</span> University of Alberta</p>
 				<h3>Agile Planning for Sofware Products</h3>
@@ -69,7 +70,7 @@ class Certifications extends React.Component {
 			</div>
 		</section>
 		<section className="languages">
-			<div className="skills right">
+			<div className="skills">
 				<h2>Languages</h2>
 				<h3>English</h3>
 				<p className="description description-below">Business Fluent</p>
@@ -89,15 +90,45 @@ class WorkingExperience extends React.Component {
 	return	(
 		<section className="working-experience">
 			<h1>Working Experience</h1>
+			{/* IT BUSINESS ANALYST */}
+			<article className="working-experience-item">
+				<div className="working-experience-header">
+					<div className="role">
+						<div className="working-period">10/2017 - Present</div>
+						<h2>IT Business Analyst</h2>
+					</div>
+					<div className="employer">
+						<div className="company-name"><span className="work-at">@</span>Bookassist</div>
+					</div>
+				</div>
+				<div className="working-experience-description">
+					<p className="description description-below">As an IT Business Analyst I am involved in the definition of several web and mobile projects aiming to grow and improve Bookassist’s Booking Engine technology.</p>
+				</div>
+				<h3 className="responsibilities">Key Responsibilities</h3>
+				<ul className="responsibilities-list description description-below">
+					<li className="responsibility">Collect, categorise and track the Product Backlog from existing requirements and new requirements as they arise</li>
+					<li className="responsibility">Gather requirements from several sources including customer surveys, market research, key stakeholders within the business, strategic requirements, customer requests</li>
+					<li className="responsibility">Translate requirements into specific projects with clear and concise documentation of business and functional requirements</li>
+					<li className="responsibility">Analyse the Requirements, that will include: identify the key needs, define the minimum viable product, propose the scope, assess the risks, assess impact on existing product and processes and calculate the cost-benefit</li>
+					<li className="responsibility">Work with the Product and Development teams to review solution options, assess impacts and agree final scope and definition</li>
+					<li className="responsibility">Manage stakeholder sign-off, communicate benefits and resolve issues</li>
+					<li className="responsibility">Write Functional Specification documents</li>
+					<li className="responsibility">Work with the Development team to ensure the project is understood, to clarify requirements and solve problems, review technical documents to ensure the delivered product will meet requirements</li>
+					<li className="responsibility">Write the Functional Handover document, identify handover impacts, and support the Product team in handover and training needs. Maintenance of the product description</li>
+					<li className="responsibility">Complete post-upgrade assessments</li>
+					<li className="responsibility">Reply to general queries and specific customer requests giving regular, clear and structured communication of product descriptions and benefits, project status updates</li>
+				</ul>
+			</article>
+
 			{/* OPERATIONS TEAM LEAD */}
 			<article className="working-experience-item">
 				<div className="working-experience-header">
-					<div className="left">
-						<div className="working-period">09/2015 - Present</div>
+					<div className="role">
+						<div className="working-period">09/2015 - 10/2017</div>
 						<h2>Operations Team Lead</h2>
 					</div>
-					<div className="right">
-						<div className="company-name">Realex Payments</div>
+					<div className="employer">
+						<div className="company-name"><span className="work-at">@</span>Realex Payments</div>
 					</div>
 				</div>
 				<div className="working-experience-description">
@@ -119,12 +150,12 @@ class WorkingExperience extends React.Component {
 			{/* OPERATIONS ANALYST */}
 			<article className="working-experience-item">
 				<div className="working-experience-header">
-					<div className="left">
+					<div className="role">
 						<div className="description description-above">11/2013 - 08/2015</div>
 						<h2>Operations Analyst</h2>
 					</div>
-					<div className="right">
-						<div className="company-name">Realex Payments</div>
+					<div className="employer">
+						<div className="company-name"><span className="work-at">@</span>Realex Payments</div>
 					</div>
 				</div>
 				<div className="working-experience-description">
@@ -144,12 +175,12 @@ class WorkingExperience extends React.Component {
 			{/* MOBILE AND WEB DEVELOPER */}
 			<article className="working-experience-item">
 				<div className="working-experience-header">
-					<div className="left">
+					<div className="role">
 						<div className="description description-above">10/2012 - 10/2013</div>
 						<h2>Mobile and Web Developer</h2>
 					</div>
-					<div className="right">
-						<div className="company-name">Freelance</div>
+					<div className="employer">
+						<div className="company-name"><span className="work-at">@</span>Freelance</div>
 					</div>
 				</div>
 				<div className="working-experience-description">
@@ -168,12 +199,12 @@ class WorkingExperience extends React.Component {
 			{/* BUSINESS ANALYST / PROJECT MANAGER */}
 			<article className="working-experience-item">
 				<div className="working-experience-header">
-					<div className="left">
+					<div className="role">
 						<div className="description description-above">03/2010 - 10/2012</div>
 						<h2>Business Analyst / Project Manager</h2>
 					</div>
-					<div className="right">
-						<div className="company-name">SIANI</div>
+					<div className="employer">
+						<div className="company-name"><span className="work-at">@</span>SIANI</div>
 					</div>
 				</div>
 				<div className="working-experience-description">
@@ -195,12 +226,12 @@ class WorkingExperience extends React.Component {
 			{/* SOFTWARE ENGINEER */}
 			<article className="working-experience-item">
 				<div className="working-experience-header">
-					<div className="left">
+					<div className="role">
 						<div className="description description-above">03/2008 - 02/2010</div>
 						<h2>Software Engineer</h2>
 					</div>
-					<div className="right">
-						<div className="company-name">SIANI</div>
+					<div className="employer">
+						<div className="company-name"><span className="work-at">@</span>SIANI</div>
 					</div>
 				</div>
 				<div className="working-experience-description">
@@ -230,11 +261,11 @@ class Education extends React.Component {
 			{/* MASTERS DEGREE IN COMPUTER ENGINEERING */}
 			<article className="education-item">
 				<div className="education-header">
-					<div className="left">
+					<div className="">
 						<div className="studying-period">2009</div>
 						<h2>Master's Degree in Computer Engineering</h2>
 					</div>
-					<div className="right">
+					<div className="">
 						<div className="institution-name">University of Las Palmas de Gran Canaria</div>
 					</div>
 				</div>
@@ -245,11 +276,11 @@ class Education extends React.Component {
 
 			<article className="education-item">
 				<div className="education-header">
-					<div className="left">
+					<div className="">
 						<div className="studying-period">2004</div>
 						<h2>Bachelor's Degree in Computer Engineering</h2>
 					</div>
-					<div className="right">
+					<div className="">
 						<div className="institution-name">University of Las Palmas de Gran Canaria</div>
 					</div>
 				</div>
@@ -263,18 +294,23 @@ class Education extends React.Component {
 }
 
 class Menu extends React.Component {
+
+	print() {
+		window.print();
+	}
+
 	render () {
 	return	(
 		<div className="top-menu-container">
 		<ul className="top-menu">
 			<li>
-				<a className="top-menu-item" target="_blank" href="https://www.linkedin.com/in/elielcruzlopez/">LinkedIn</a>
+				<a className="top-menu-item" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/elielcruzlopez/">LinkedIn</a>
 			</li>
 			<li>
-				<a className="top-menu-item" target="_blank" href="https://github.com/elielcruz">GitHub</a>
+				<a className="top-menu-item" rel="noopener noreferrer" target="_blank" href="https://github.com/elielcruz">GitHub</a>
 			</li>
 			<li>
-				<a className="button-cv" target="_blank" href="https://github.com/elielcruz/personal/tree/master/public/docs/ElielCruzLopez-CV.pdf">Download CV</a>
+				<button className="button-cv" onClick={this.print} >Print</button>
 			</li>
 		</ul>
 		</div>
@@ -301,15 +337,13 @@ class App extends Component {
 	  	<Menu lang={this.state.lang}/>
 	    <div className="App-header">
 	    <div className="App-header-container">
-	      <div className="header-left">
-	      	<div className="page-title">
-	      		<div className="first-name">Eliel <span className="phoneme">/ɛli'ɛl/</span></div>
-	      		<div className="last-name">Cruz Lopez</div>
-	      	</div>
-	      </div>
-	      <div className="header-right">
-	      	<div className="phone">+353 (0) 83 158 2291</div>
-	      	<div className="email">me@elielcruzlopez.com</div>
+      	<div className="page-title">
+      		<div className="first-name">Eliel <span className="phoneme">/ɛli'ɛl/</span></div>
+      		<div className="last-name">Cruz Lopez</div>
+      	</div>
+	      <div className="contact-details">
+	      	<a href="tel:+353-83-158-2291" className="phone">+353 (0) 83 158 2291</a>
+	      	<a href="mailto:elielcruz@gmail.com" className="email">elielcruz@gmail.com</a>
 	      </div>
 	    </div>
 	    </div>

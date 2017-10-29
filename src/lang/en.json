@@ -1,0 +1,9 @@
+{
+	"aboutme" : {
+		"header": "About Me",
+		"description": "Passionate about Software Development and Product Management, striving to develop usable and reliable solutions. I enjoy being part of a team in which everyone can express their ideas in an open, trustworthy and transparent environment, where everyone's feedback is taken into account in order to create better and more usable products."
+	},
+	"notifications" : {
+		"showstarred": "We are only showing your favourite expressions."
+	}
+}

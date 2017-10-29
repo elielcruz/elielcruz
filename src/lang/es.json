@@ -1,0 +1,9 @@
+{
+	"aboutme" : {
+		"header": "Sobre Mí",
+		"description": "Me defino como un apasionado del desarrollo de software y de producto, que se esfuerza por desarrollar soluciones fiables y útiles. Mi próximo objetivo de carrera es llegar a formar parte de un equipo en el cual pueda expresar mis ideas en un ambiente abierto, al mismo tiempo escuchando y tomando en consideración las opiniones de mi equipo y el resto de intersados con el fin de crear mejores productos."
+	},
+	"notifications" : {
+		"showstarred": "Sólo se muestran tus expresiones favoritas."
+	}
+}

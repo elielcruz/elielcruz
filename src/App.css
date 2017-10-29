@@ -1,42 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+/* Mobile First */
+
 .App {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Helvetica";
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   line-height: 150%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .App-header {
-  margin-top: 50px;
+  margin: 20px 0;
 }
 
 .App-header-container {
-  margin: 0 auto 80px auto;
-  padding: 20px 10%;
+  padding: 20px 5%;
   max-width: 800px;
-  min-height: 35px;
-}
-
-.header-left {
-  float: left;
-  display: block;
-}
-
-.header-right {
-  float:right;
-  display: block;
-  text-align: right;
 }
 
 .page-title {
 
 }
 
+.contact-details {
+  margin-top: 20px;
+}
+
 .first-name {
   font-size: 52px;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .phoneme {
@@ -49,20 +44,16 @@
   color: #3778BA;
 }
 
+.phone, .email {
+  display: block;
+  text-decoration: none;
+  color: #555;
+}
+
 .App-body {
   margin: 0 auto;
-  padding: 0 10%;
+  padding: 0 5%;
   max-width: 800px;
-}
-
-.left {
-  display: block;
-  float: left;
-}
-
-.right {
-  display: block;
-  float: right;
 }
 
 h1 {
@@ -70,7 +61,7 @@ h1 {
   color: #555;
   font-weight: lighter;
   clear: both;
-  line-height: 150%;
+  margin-top: 50px;
 }
 
 h2 {
@@ -87,13 +78,22 @@ h3 {
   font-weight: lighter;
 }
 
+.highlights {
+  overflow: overlay;
+}
+
+.skills {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
 .top-menu-container {
   width: 100%;
   background-color: #333;
   height: 40px;
   position: fixed;
   z-index: 10;
-  padding-top: 15px;
+  padding-top: 5px;
   top: 0;
 }
 
@@ -120,17 +120,22 @@ h3 {
 
 .button-cv {
   background-color: #3778BA;
+  border: none;
+  font-family: "Open Sans", "Helvetica";
+  font-weight: lighter;
+  font-size: 16px;
   color: #ddd;
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 2px;
+  opacity: 0.9;
 }
 .button-cv:hover {
-  opacity: 0.8;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .about-me {
-  margin-top: 50px;
 }
 
 .description {
@@ -144,12 +149,6 @@ h3 {
 
 .description-above {
   margin: 10px 0 0;
-}
-
-.skills {
-  width: 48%;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .year {
@@ -169,6 +168,7 @@ h3 {
 .company-name,
 .institution-name {
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .working-experience-description,
@@ -179,4 +179,80 @@ h3 {
 
 .responsibilities {
   margin: 20px 0 10px 0;
+}
+
+.work-at {
+  color: #ccc;
+}
+
+/* Desktop specific */
+@media print, (min-width: 600px) {
+  .App-header {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    overflow: overlay;
+  }
+  .App-header-container {
+    margin: 0 auto;
+    overflow: overlay;
+    padding: 20px 0;
+  }
+  .App-body {
+    margin: 0 auto;
+    padding: 0 10%;
+    max-width: 800px;
+    overflow: overlay;
+  }
+  .page-title {
+    float: left;
+  }
+  .contact-details {
+    float: right;
+    margin: 0;
+  }
+  .main-skills, .certifications {
+    float: left;
+    width: 40%;
+    display: inline;
+  }
+  .soft-skills, .languages {
+    float: right;
+    width: 40%;
+    display: inline;
+  }
+  .role {
+    float: left;
+  }
+  .employer {
+    float: right;
+    margin-top: 29px;
+  }
+}
+
+/* Print view (keep it at the end) */
+@media only print {
+  .App {
+    font-size: 14px;
+  }
+  .App-header {
+    margin: 0;
+  }
+  .top-menu-container {
+    display: none;
+  }
+  h1 {
+    margin-top: 30px;
+  }
+  .phoneme {
+    font-size: 24px;
+    color: #ccc;
+  }
+
+  @page {
+    margin: 2cm 0.5cm 2cm 0.5cm;
+  }
+  @page :first {
+    margin: 0 0.5cm 2cm 0.5cm;
+  }
 }
