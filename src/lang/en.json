@@ -1,9 +1,6 @@
 {
 	"aboutme" : {
 		"header": "About Me",
-		"description": "Passionate about Software Development and Product Management, striving to develop usable and reliable solutions. I enjoy being part of a team in which everyone can express their ideas in an open, trustworthy and transparent environment, where everyone's feedback is taken into account in order to create better and more usable products."
-	},
-	"notifications" : {
-		"showstarred": "We are only showing your favourite expressions."
+		"description": "Passionate about Software Development and Product Management, striving to develop usable and reliable solutions. My next career goal is to become part of a team in which I can express my ideas in an open environment, at the same time I hear and take into account my team and stakeholders feedback to create highly usable products."
 	}
 }

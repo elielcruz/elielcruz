@@ -24,29 +24,22 @@ class Skills extends React.Component {
 			<div className="skills">
 				<h2>Main Skills</h2>
 				<h3>Business Analysis</h3>
-				<p className="description description-below">Worked in agile projects for the public sector, eliciting requirements, 
-				identifying risks and providing customers with regular demos.</p>
+				<p className="description description-below">Worked in agile projects as a Business Analyst for over three years, eliciting requirements, managing the backlog, identifying risks and involving customers at early stages. Ensuring just the right amount of documentation is written</p>
 				<h3>Project Management</h3>
-				<p className="description description-below">Worked as a Project Manager assisting senior project managers in monitoring 
-				agile projects as well as coordinating operations projects as a Team Lead.</p>
+				<p className="description description-below">Worked as a Project Manager assisting Senior Project Managers in monitoring agile projects as well as coordinating operations projects when I was a Team Lead</p>
 				<h3>Software Development</h3>
-				<p className="description description-below">Worked as a Software Engineer in web-based Java projects as well as a Freelance 
-				Web and Mobile developer.</p>
+				<p className="description description-below">Worked as a Software Engineer in web-based Java projects. Passionate about software, I have also developed some Web and Mobile freelance  projects</p>
 			</div>
 		</section>
 		<section className="soft-skills">
 			<div className="skills">
 				<h2>Soft Skills</h2>
 				<h3>People Management</h3>
-				<p className="description description-below">As a Team Lead I am required to lead, inspire, motivate as well as hiring, 
-				training and evaluating my team.</p>
+				<p className="description description-below">As a Team Lead I aimed to have a motivated inspired team, encouraging an open and honest approach. As a Business Analyst, I involve stakeholders to ensure a strong buy-in, leveraging their ideas and knowledge</p>
 				<h3>Time Management</h3>
-				<p className="description description-below">Leading two teams as well as acting as technical point of contact for three 
-				different partners, managing escalations and keeping service levels at highest 
-				possible standards.</p>
+				<p className="description description-below">As a Team Lead, I ensured tight SLAs were met as well as I managed customers and partners expectations. As a Business Analyst, I prioritise the backlog to deliver value on a regular basis</p>
 				<h3>Problem Solving</h3>
-				<p className="description description-below">As a Team Lead I am required to make decisions in scenarios of high uncertainty 
-				at the same time I have to identify the best available solution.</p>
+				<p className="description description-below">As a Business Analyst and also as a Team Lead I have been required to make decisions in scenarios of high uncertainty at the same time I had to identify the best available solution</p>
 			</div>
 		</section>
 		</div>
@@ -102,21 +95,17 @@ class WorkingExperience extends React.Component {
 					</div>
 				</div>
 				<div className="working-experience-description">
+					<p className="description description-below">Bookassist partners with hotels to build their brand online, drive direct business to their branded website and capture bookings with world class booking technology helping them optimise their online distribution and grow their margin per booking.</p>
 					<p className="description description-below">As an IT Business Analyst I am involved in the definition of several web and mobile projects aiming to grow and improve Bookassist’s Booking Engine technology.</p>
 				</div>
 				<h3 className="responsibilities">Key Responsibilities</h3>
 				<ul className="responsibilities-list description description-below">
-					<li className="responsibility">Collect, categorise and track the Product Backlog from existing requirements and new requirements as they arise</li>
-					<li className="responsibility">Gather requirements from several sources including customer surveys, market research, key stakeholders within the business, strategic requirements, customer requests</li>
-					<li className="responsibility">Translate requirements into specific projects with clear and concise documentation of business and functional requirements</li>
-					<li className="responsibility">Analyse the Requirements, that will include: identify the key needs, define the minimum viable product, propose the scope, assess the risks, assess impact on existing product and processes and calculate the cost-benefit</li>
-					<li className="responsibility">Work with the Product and Development teams to review solution options, assess impacts and agree final scope and definition</li>
+					<li className="responsibility">Collect, categorise and track the Product Backlog from existing requirements as well as from new requirements</li>
+					<li className="responsibility">Identify the key needs, define the minimum viable product, propose the scope, assess the risks and impact on existing products and processes, and calculate the cost-benefit</li>
+					<li className="responsibility">Manage product requirements from several sources including market research, key stakeholders within the business, strategic requirements and customer requests</li>
+					<li className="responsibility">Translate requirements into specific Projects, EPICs and User Stories with clear and concise documentation of business and functional requirements</li>
+					<li className="responsibility">Collaborate with the Development Team to ensure the projects are understood, to clarify requirements and to solve problems when they arise</li>
 					<li className="responsibility">Manage stakeholder sign-off, communicate benefits and resolve issues</li>
-					<li className="responsibility">Write Functional Specification documents</li>
-					<li className="responsibility">Work with the Development team to ensure the project is understood, to clarify requirements and solve problems, review technical documents to ensure the delivered product will meet requirements</li>
-					<li className="responsibility">Write the Functional Handover document, identify handover impacts, and support the Product team in handover and training needs. Maintenance of the product description</li>
-					<li className="responsibility">Complete post-upgrade assessments</li>
-					<li className="responsibility">Reply to general queries and specific customer requests giving regular, clear and structured communication of product descriptions and benefits, project status updates</li>
 				</ul>
 			</article>
 
